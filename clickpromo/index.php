@@ -1,3 +1,11 @@
+<?php
+
+error_reporting(0);
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,7 +55,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="home.html"
+                <a class="nav-link" href="index.php"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -85,13 +93,21 @@
                   >Promo</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="profil.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Profil</a
+                >
+              </li>
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="btn btn-lg btn-danger text-light ml-5"
-                  ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add
-                  To Cart</a
-                >
+                  ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -126,8 +142,8 @@
               <p class="slider-title">HANYA DENGAN SATU CLICK</p>
               <p class="slider-text">Terdapat promo menarik setiap harinya</p>
               <p class="buttob mt-5">
-                <a class="btn btn-lg btn-success">DAFTAR</a>&nbsp; &nbsp;
-                <a class="btn btn-danger btn-lg">MASUK</a>
+                <a href="register.php" class="btn btn-lg btn-success">DAFTAR</a>&nbsp; &nbsp;
+                <a href="login.php" class="btn btn-danger btn-lg">MASUK</a>
               </p>
             </div>
           </div>
@@ -589,8 +605,12 @@
                 <div class="box">
                   <h3>Follow Kami</h3>
                   <a href="#"> <i class="fa fa-facebook-f"></i> facebook </a>
-                  <a href="#"> <i class="fa fa-whatsapp"></i> whatsapp </a>
-                  <a href="#"> <i class="fa fa-instagram"></i> instagram </a>
+                  <a href="https://wa.me/6287750116539">
+                    <i class="fa fa-whatsapp"></i> whatsapp
+                  </a>
+                  <a href="https://www.instagram.com/cli.ckpromo/">
+                    <i class="fa fa-instagram"></i> instagram
+                  </a>
                   <a href="#"> <i class="fa fa-linkedin"></i> linkedin </a>
                 </div>
               </div>
@@ -690,6 +710,40 @@
             loop: false,
           },
         },
+      });
+    </script>
+    <script>
+      document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        var isLoggedIn = false; 
+    
+        if (isLoggedIn) {
+          var feedbackInput = document.getElementById("feedbackInput").value;
+          var formData = new FormData();
+          formData.append("feedback", feedbackInput);
+    
+          fetch("simpan_feedback.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(function(response) {
+            if (response.ok) {
+              document.getElementById("feedbackForm").reset();
+              var successMessage = document.createElement("div");
+              successMessage.classList.add("success-message");
+              successMessage.innerText = "Feedback berhasil terkirim.";
+              document.getElementById("feedbackForm").appendChild(successMessage);
+            } else {
+              throw new Error("Terjadi kesalahan dalam mengirim feedback.");
+            }
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+        } else {
+          alert("Anda harus login terlebih dahulu untuk memberikan feedback.");
+        }
       });
     </script>
   </body>

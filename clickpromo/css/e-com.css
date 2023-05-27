@@ -140,73 +140,53 @@
 }
 
 .outer-div {
-  height: 350px;
+  height: 300px;
   overflow: hidden;
 }
 .inner-div1 {
   height: 300px;
-  width: 100%;
+  width: 150%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/zalora.jpg);
+  /* background-image: url(../img/bahan\ lain/shopee.webp); */
 }
 .inner-div1:hover {
   transform: scale(1.2);
 }
 .inner-div2 {
   height: 300px;
-  width: 100%;
+  width: 150%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/shopee.webp);
+  /* background-image: url(../img/bahan\ lain/tokopedia.jpg); */
 }
 .inner-div2:hover {
   transform: scale(1.2);
 }
+
 .inner-div3 {
   height: 300px;
-  width: 100%;
+  width: 150%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/zara.svg);
+  /* background-image: url(../img/bahan\ lain/zalora.jpg); */
 }
 .inner-div3:hover {
   transform: scale(1.2);
 }
+
 .inner-div4 {
   height: 300px;
-  width: 100%;
+  width: 150%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/uniqlo.svg);
+  /* background-image: url(../img/bahan\ lain/uniqlo.svg); */
 }
 .inner-div4:hover {
-  transform: scale(1.2);
-}
-.inner-div5 {
-  height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/tokopedia.jpg);
-}
-.inner-div5:hover {
-  transform: scale(1.2);
-}
-.inner-div6 {
-  height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/lazada.png);
-}
-.inner-div6:hover {
   transform: scale(1.2);
 }
 .zoom-box-text {
