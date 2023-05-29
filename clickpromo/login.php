@@ -1,26 +1,29 @@
 <?php
 session_start();
 
-include 'config.php';
+include 'connect.php';
 
-$Email = "";
+$username = "";
 $password = "";
+$loginError = false;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $Email = htmlspecialchars($_POST["email"]);
-    $password = md5(htmlspecialchars($_POST["password"]));
+    $username = htmlspecialchars($_POST["username"]);
+    $password = htmlspecialchars($_POST["password"]);
 
-    $cek_akun_user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM customer WHERE Email = '$Email' AND Password = '$password'"));
+    $query = "SELECT * FROM customer WHERE Username = '$username' AND Password = '$password'";
+    $result = mysqli_query($conn, $query);
 
-    if ($cek_akun_user != null) {
+    if (mysqli_num_rows($result) > 0) {
         $_SESSION["akun-user"] = [
-            "email" => $Email,
+            "username" => $username,
             "password" => $password
         ];
+        header("Location: index.php");
+        exit;
+    } else {
+        $loginError = true;
     }
-
-    header("Location: index.php");
-    exit;
 }
 ?>
 
@@ -38,10 +41,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <div class="container">
+        <?php if ($loginError) { ?>
+            <div class="alert alert-danger alert-dismissible">
+                Username atau password salah
+                <button class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        <?php } ?>
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $Email; ?>" required>
+                <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password" value="" required>
@@ -49,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="input-group">
                 <button type="submit" name="submit" class="btn">Login</button>
             </div>
-            <p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+            <p class="login-register-text">Belum punya akun? <a href="register.php">Daftar di sini</a>.</p>
         </form>
     </div>
 </body>

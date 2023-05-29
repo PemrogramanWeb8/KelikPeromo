@@ -53,7 +53,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="e-com.html"
+                <a class="nav-link" href="e-com.php"
                   >E-Commerce <span class="sr-only">(current)</span></a
                 >
               </li>

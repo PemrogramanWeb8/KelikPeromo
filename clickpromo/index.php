@@ -60,7 +60,7 @@ session_start();
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="e-com.html">E-Commerce</a>
+                <a class="nav-link" href="e-com.php">E-Commerce</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -87,7 +87,7 @@ session_start();
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="promo.html"
+                  href="promo.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Promo</a
