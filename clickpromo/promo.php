@@ -1,3 +1,11 @@
+<?php
+
+error_reporting(0);
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -84,7 +92,7 @@
               <li class="nav-item active">
                 <a
                   class="nav-link"
-                  href="promo.html"
+                  href="promo.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Promo</a
@@ -93,7 +101,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="profil.html"
+                  href="profil.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Profil</a

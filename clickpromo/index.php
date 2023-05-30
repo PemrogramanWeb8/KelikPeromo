@@ -96,7 +96,7 @@ session_start();
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="profil.html"
+                  href="profil.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Profil</a
@@ -105,7 +105,9 @@ session_start();
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="btn btn-lg btn-danger text-light ml-5"
+                <a
+                  href="whislist.php"
+                  class="btn btn-lg btn-danger text-light ml-5"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i
                 ></a>
               </li>
@@ -142,7 +144,8 @@ session_start();
               <p class="slider-title">HANYA DENGAN SATU CLICK</p>
               <p class="slider-text">Terdapat promo menarik setiap harinya</p>
               <p class="buttob mt-5">
-                <a href="register.php" class="btn btn-lg btn-success">DAFTAR</a>&nbsp; &nbsp;
+                <a href="register.php" class="btn btn-lg btn-success">DAFTAR</a
+                >&nbsp; &nbsp;
                 <a href="login.php" class="btn btn-danger btn-lg">MASUK</a>
               </p>
             </div>
@@ -713,38 +716,44 @@ session_start();
       });
     </script>
     <script>
-      document.getElementById("feedbackForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-    
-        var isLoggedIn = false; 
-    
-        if (isLoggedIn) {
-          var feedbackInput = document.getElementById("feedbackInput").value;
-          var formData = new FormData();
-          formData.append("feedback", feedbackInput);
-    
-          fetch("simpan_feedback.php", {
-            method: "POST",
-            body: formData
-          })
-          .then(function(response) {
-            if (response.ok) {
-              document.getElementById("feedbackForm").reset();
-              var successMessage = document.createElement("div");
-              successMessage.classList.add("success-message");
-              successMessage.innerText = "Feedback berhasil terkirim.";
-              document.getElementById("feedbackForm").appendChild(successMessage);
-            } else {
-              throw new Error("Terjadi kesalahan dalam mengirim feedback.");
-            }
-          })
-          .catch(function(error) {
-            console.log(error);
-          });
-        } else {
-          alert("Anda harus login terlebih dahulu untuk memberikan feedback.");
-        }
-      });
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var isLoggedIn = false;
+
+          if (isLoggedIn) {
+            var feedbackInput = document.getElementById("feedbackInput").value;
+            var formData = new FormData();
+            formData.append("feedback", feedbackInput);
+
+            fetch("simpan_feedback.php", {
+              method: "POST",
+              body: formData,
+            })
+              .then(function (response) {
+                if (response.ok) {
+                  document.getElementById("feedbackForm").reset();
+                  var successMessage = document.createElement("div");
+                  successMessage.classList.add("success-message");
+                  successMessage.innerText = "Feedback berhasil terkirim.";
+                  document
+                    .getElementById("feedbackForm")
+                    .appendChild(successMessage);
+                } else {
+                  throw new Error("Terjadi kesalahan dalam mengirim feedback.");
+                }
+              })
+              .catch(function (error) {
+                console.log(error);
+              });
+          } else {
+            alert(
+              "Anda harus login terlebih dahulu untuk memberikan feedback."
+            );
+          }
+        });
     </script>
   </body>
 </html>
