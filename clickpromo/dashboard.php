@@ -1,3 +1,11 @@
+<?php
+
+error_reporting(0);
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,13 +33,13 @@
     <link rel="stylesheet" href="css/home.css" />
 
     <title>ClickPromo</title>
-    <link rel="website icon" type="png" href="img/bahan lain/logo2.png" />
+    <link rel="website icon" type="png" href="../img/bahan lain/logo2.png" />
   </head>
   <body>
     <div class="container-fluid" style="background-color: #ffffff">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">CLICKPROMO</a>
+        <a class="navbar-brand" href="#">CLICKPROMO</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,12 +54,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.php"
+                <a class="nav-link" href="dashboard.php"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" onclick='alert("Harap Login Terlebih dahulu")'>E-Commerce</a>
+                <a class="nav-link" href="e-com.php">E-Commerce</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -68,7 +76,9 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="alang.html">Alang Artha</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="amdila.html">Amdilla Rahmadi</a>
+                  <a class="dropdown-item" href="amdila.html"
+                    >Amdilla Rahmadi</a
+                  >
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="kia.html">Kia Putri</a>
                 </div>
@@ -76,7 +86,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  onclick='alert("Harap Login Terlebih dahulu")'
+                  href="promo.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Promo</a
@@ -85,7 +95,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  onclick='alert("Harap Login Terlebih dahulu")'
+                  href="profil.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Profil</a
@@ -94,9 +104,7 @@
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a
-                  class="btn btn-lg btn-danger text-light ml-5"
-                  onclick='alert("Harap Login Terlebih dahulu")'
+                <a class="btn btn-lg btn-danger text-light ml-5" href="wishlist.php"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i
                 ></a>
               </li>
@@ -133,9 +141,7 @@
               <p class="slider-title">HANYA DENGAN SATU CLICK</p>
               <p class="slider-text">Terdapat promo menarik setiap harinya</p>
               <p class="buttob mt-5">
-                <a href="register.php" class="btn btn-lg btn-success">DAFTAR</a
-                >&nbsp; &nbsp;
-                <a href="login.php" class="btn btn-danger btn-lg">MASUK</a>
+                <a href="logout.php" class="btn btn-danger btn-lg">KELUAR</a>
               </p>
             </div>
           </div>
@@ -149,9 +155,7 @@
               <p class="slider-title">BURUAN AMBIL PROMO SEKARANG JUGA !!!</p>
               <p class="slider-text">promo menarik dari setiap e-commerce</p>
               <p class="buttob mt-5">
-                <a href="register.php" class="btn btn-lg btn-success">DAFTAR</a
-                >&nbsp; &nbsp;
-                <a href="login.php" class="btn btn-danger btn-lg">MASUK</a>
+                <a href="logout.php" class="btn btn-danger btn-lg">KELUAR</a>
               </p>
             </div>
           </div>
@@ -218,9 +222,6 @@
 
       <div class="row mt-1 pb-5">
         <div class="col-md-12 text-center">
-          <a href="register.php" class="btn btn-danger text-light btn-lg"
-            >DAFTAR SEKARANG</a
-          >
         </div>
       </div>
     </div>
@@ -708,44 +709,38 @@
       });
     </script>
     <script>
-      document
-        .getElementById("feedbackForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var isLoggedIn = false;
-
-          if (isLoggedIn) {
-            var feedbackInput = document.getElementById("feedbackInput").value;
-            var formData = new FormData();
-            formData.append("feedback", feedbackInput);
-
-            fetch("simpan_feedback.php", {
-              method: "POST",
-              body: formData,
-            })
-              .then(function (response) {
-                if (response.ok) {
-                  document.getElementById("feedbackForm").reset();
-                  var successMessage = document.createElement("div");
-                  successMessage.classList.add("success-message");
-                  successMessage.innerText = "Feedback berhasil terkirim.";
-                  document
-                    .getElementById("feedbackForm")
-                    .appendChild(successMessage);
-                } else {
-                  throw new Error("Terjadi kesalahan dalam mengirim feedback.");
-                }
-              })
-              .catch(function (error) {
-                console.log(error);
-              });
-          } else {
-            alert(
-              "Anda harus login terlebih dahulu untuk memberikan feedback."
-            );
-          }
-        });
+      document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        var isLoggedIn = false; 
+    
+        if (isLoggedIn) {
+          var feedbackInput = document.getElementById("feedbackInput").value;
+          var formData = new FormData();
+          formData.append("feedback", feedbackInput);
+    
+          fetch("simpan_feedback.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(function(response) {
+            if (response.ok) {
+              document.getElementById("feedbackForm").reset();
+              var successMessage = document.createElement("div");
+              successMessage.classList.add("success-message");
+              successMessage.innerText = "Feedback berhasil terkirim.";
+              document.getElementById("feedbackForm").appendChild(successMessage);
+            } else {
+              throw new Error("Terjadi kesalahan dalam mengirim feedback.");
+            }
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+        } else {
+          alert("Anda harus login terlebih dahulu untuk memberikan feedback.");
+        }
+      });
     </script>
   </body>
 </html>

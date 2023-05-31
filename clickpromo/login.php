@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'connect.php';
+include 'php/connect.php';
 
 $username = "";
 $password = "";
@@ -11,15 +11,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = htmlspecialchars($_POST["username"]);
     $password = htmlspecialchars($_POST["password"]);
 
-    $query = "SELECT * FROM customer WHERE Username = '$username' AND Password = '$password'";
-    $result = mysqli_query($conn, $query);
+    // Validasi login admin
+    $adminQuery = "SELECT * FROM administrator WHERE Username = '$username' AND Password = '$password'";
+    $adminResult = mysqli_query($conn, $adminQuery);
 
-    if (mysqli_num_rows($result) > 0) {
+    // Validasi login pengguna biasa
+    $userQuery = "SELECT * FROM customer WHERE Username = '$username' AND Password = '$password'";
+    $userResult = mysqli_query($conn, $userQuery);
+
+    if (mysqli_num_rows($adminResult) > 0) {
         $_SESSION["akun-user"] = [
             "username" => $username,
-            "password" => $password
+            "password" => $password,
+            "role" => "admin"
         ];
-        header("Location: index.php");
+        header("Location: administrator.php");
+        exit;
+    } elseif (mysqli_num_rows($userResult) > 0) {
+        $_SESSION["akun-user"] = [
+            "username" => $username,
+            "password" => $password,
+            "role" => "user"
+        ];
+        header("Location: dashboard.php");
         exit;
     } else {
         $loginError = true;

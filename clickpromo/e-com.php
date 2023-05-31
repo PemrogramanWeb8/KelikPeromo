@@ -30,13 +30,13 @@ session_start();
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/e-com.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
     <title>E-Commerce</title>
     <link rel="website icon" type="png" href="img/bahan lain/logo2.png" />
   </head>
   <body>
-    <div class="container-fluid" style="background-color: #000000">
+    <div class="container-fluid" style="background-color: #ffffff">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">CLICKPROMO</a>
@@ -55,7 +55,7 @@ session_start();
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.php"
+                <a class="nav-link" href="dashboard.php"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -110,9 +110,7 @@ session_start();
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a
-                  href="whislist.php"
-                  class="btn btn-lg btn-danger text-light ml-5"
+                <a class="btn btn-lg btn-danger text-light ml-5 " href="whislist.php"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i
                 ></a>
               </li>

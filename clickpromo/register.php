@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'php/connect.php';
 error_reporting(0);
 session_start();
 

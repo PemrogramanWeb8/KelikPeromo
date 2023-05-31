@@ -79,7 +79,7 @@
         button
         type="submit"
         class="btn btn-danger text-light mt-3 mb-2"
-        href="admin1.html"
+        href="administrator.php"
       >
         Kembali
       </a>

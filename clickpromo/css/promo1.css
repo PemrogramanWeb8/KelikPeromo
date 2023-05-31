@@ -139,36 +139,59 @@
 .slider-text {
   font-size: 30px;
 }
-
 .outer-div {
-  height: 350px;
+  height: 200px;
   overflow: hidden;
 }
 .inner-div1 {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+  width: 75%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/for-men.jpg);
+  background-image: url(../img/baju/baju.jpg);
 }
 .inner-div1:hover {
   transform: scale(1.2);
 }
 .inner-div2 {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+  width: 75%;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background-image: url(../img/bahan\ lain/for-women.jpg);
+  background-image: url(../img/celana/celana1.jpg);
 }
 .inner-div2:hover {
   transform: scale(1.2);
 }
+
+.inner-div3 {
+  height: 200px;
+  width: 75%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  background-image: url(../img/jam/jam2.webp);
+}
+.inner-div3:hover {
+  transform: scale(1.2);
+}
+
+.inner-div4 {
+  height: 200px;
+  width: 75%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  background-image: url(../img/sepatu/sepatu1.webp);
+}
+.inner-div4:hover {
+  transform: scale(1.2);
+}
 .zoom-box-text {
   text-align: center;
-  line-height: 300px;
+  line-height: 150px;
 }
 .zoom-box-text {
   color: white;

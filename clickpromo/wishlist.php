@@ -24,11 +24,11 @@
     />
     <link rel="stylesheet" href="css/whislist.css" />
 
-    <title>E-Commerce</title>
+    <title>wishlist</title>
     <link rel="website icon" type="png" href="img/bahan lain/logo2.png" />
   </head>
   <body>
-    <div class="container-fluid" style="background-color: #000000">
+    <div class="container-fluid" style="background-color: #ffffff">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">CLICKPROMO</a>
@@ -47,13 +47,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"
+                <a class="nav-link" href="dashboard.php"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="e-com.html"
+                <a class="nav-link" href="e-com.php"
                   >E-Commerce <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -84,7 +84,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="promo.html"
+                  href="promo.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Promo</a
@@ -93,7 +93,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="profil.html"
+                  href="profil.php"
                   tabindex="-1"
                   aria-disabled="true"
                   >Profil</a
@@ -102,7 +102,7 @@
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="btn btn-lg btn-danger text-light ml-5"
+                <a class="btn btn-lg btn-danger text-light ml-5" href="wishlist.php"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i
                 ></a>
               </li>
@@ -113,82 +113,14 @@
     </div>
 
     <!-- kolom 1 -->
-    <div class="container text-left">
-      <div class="row align-items-center">
-        <div class="col">Voucher</div>
-        <div class="col">Toko</div>
-        <div class="col">Aksi</div>
-      </div>
-    </div>
-
-    <!-- kolom 2 -->
-    <div role="main" class="if-swd" style="margin-bottom: 0px;">
-        <div class="BjIo5w"><div class="mcsiKT">
-            <label class="stardust-checkbox">
-                <input class="stardust-checkbox__input" type="checkbox">
-                <div class="stardust-checkbox__box"></div>
-            </label>
-        </div>
-        <div class="yl931K">Voucher</div>
-        <div class="pZMZa7">Toko</div>
-        <div class="lKFOxX">Aksi</div>
-    </div>
-    <div class="_48e0yS">
-        <div class="Eb+POp">
-            <div class="d1QL+i">
-                <div class="DHyTjg">
-                    <span class="llGx8l">Gratis</span>
-                    <span>Belanja Rp549.000 dan dapatkan 1 hadiah gratis</span>
-                    <span class="OQeSXg">
-                        <a href="/purchase-with-gifts/205338858/18779674143/271429874?showGifts=0">Tambah Lagi
-                            <svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="#ee4d2d" class="HAW5Go">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 6L4.146.854l.708-.708L10 5.293a1 1 0 010 1.414l-5.146 5.147-.708-.707L9.293 6z" fill="currentColor">
-                            </path></svg></a></span>
-                        </div>
-                        <div class="VPZ9zs GODVSY">
-                            <div class="zoXdNN">
-                                <div class="lgcEHJ">
-                                    <label class="stardust-checkbox">
-                                        <input class="stardust-checkbox__input" type="checkbox">
-                                        <div class="stardust-checkbox__box">
-                                        </div></label></div>
-                                        <div class="eUrDQm">
-                                            <div class="LAQKxn">
-                                                <a title="HOODIE HALF BIGSZIE JUMBO M-5XL REEVANTSTORE" 
-                                                href="/HOODIE-HALF-BIGSZIE-JUMBO-M-5XL-REEVANTSTORE-i.271429874.18779674143?xptdk=34db2326-b170-4560-8057-39f7ccc27286">
-                                                <div class="WanNdG" style="background-image: url(&quot;https://down-id.img.susercontent.com/file/id-11134207-7qul2-lgn03vqunlny80_tn&quot;);">
-                                                </div></a>
-                                                <div class="TyNN8t">
-                                                    <a class="JB57cn" title="HOODIE HALF BIGSZIE JUMBO M-5XL REEVANTSTORE" 
-                                                    href="/HOODIE-HALF-BIGSZIE-JUMBO-M-5XL-REEVANTSTORE-i.271429874.18779674143?xptdk=34db2326-b170-4560-8057-39f7ccc27286">HOODIE HALF BIGSZIE JUMBO M-5XL REEVANTSTORE</a>
-                                                    <div class="QRuJU-"><span></span></div></div></div></div>
-                                                    <div class="o7pJBk">
-                                                        <div class="MBOFLv">
-                                                            <div class="S-Rdfh" role="button" tabindex="0">
-                                                                <div class="rcEQuz">Variasi:<button class="_75YZdf"></button>
-                                                                </div>
-                                                                <div class="dcPz7Y">Hitam,L</div></div>
-                                                                <div></div></div></div>
-                                                                <div class="G7E4B7"><div><span class="M-AAFK">Rp250.000</span></div></div>
-                                                                <div class="MRh9G6">
-                                                                    <div class="mXmGu+ shopee-input-quantity">
-                                                                        <button class="mJX7hG">
-                                                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon">
-                                                                                <polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon></svg></button>
-                                                                                <input class="mJX7hG _8BP9GU" type="text" role="spinbutton" aria-valuenow="1" value="1">
-                                                                                <button class="mJX7hG"><svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
-                                                                                    <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon></svg></button></div></div>
-                                                                                    <div class="ofQLuG">
-                                                                                        <span>Rp250.000</span></div>
-                                                                                        <div class="mhcjog _0p-F-m">
-                                                                                            <button class="fX1Y2g">Hapus</button>
-                                                                                            <div class="tkUy0S">
-                                                                                                <button class="shopee-button-no-outline y36pik">
-                                                                                                    <span class="i01b-H">Produk Serupa</span>
-                                                                                                    <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
-                                                                                                        <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path></svg></button></div></div></div></div>
-                                                                                                        <div class="_2rzy4U"></div></div></div></div>
-
+    <div class="tabel1 mt-5"></div>
+    <table id="t01">
+      <tr>
+        <th>Nama</th>
+        <th>Toko</th>
+        <th>Aksi</th>
+      </tr>
+    </table>
 
     <footer class="container-fluid mt-5">
       <div class="container pt-5 pb-5">

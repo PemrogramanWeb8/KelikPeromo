@@ -56,7 +56,7 @@ session_start();
           button
           type="submit"
           class="btn btn-danger text-light mb-2"
-          href="index.php"
+          href="dashboard.php"
         >
           Kembali
         </a>

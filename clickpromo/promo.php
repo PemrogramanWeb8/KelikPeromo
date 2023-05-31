@@ -55,7 +55,7 @@ session_start();
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.php"
+                <a class="nav-link" href="dashboard.php"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -110,7 +110,7 @@ session_start();
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="btn btn-lg btn-danger text-light ml-5"
+                <a  href="whislist.html" class="btn btn-lg btn-danger text-light ml-5"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a
                 >
               </li>

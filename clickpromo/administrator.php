@@ -1,3 +1,9 @@
+<?php
+error_reporting(0);
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,7 +46,7 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="admin1.html">
+          <a href="administrator.php">
             <i class="bx bx-home"></i>
             <span class="link_name">Dasboard</span>
           </a>
@@ -50,20 +56,20 @@
         </li>
         <li>
           <div class="iocn-link">
-            <a href="editpromo.html">
+            <a href="edpromo.php">
               <i class="bx bx-collection"></i>
               <span class="link_name">Promo</span>
             </a>
           </div>
         </li>
         <li>
-          <a href="edcom.html">
+          <a href="edcom.php">
             <i class="bx-collection"></i>
             <span class="link_name">E-Commerce</span>
           </a>
         </li>
         <li>
-          <a href="edadmin.html">
+          <a href="edadmin.php">
             <i class="bx bx-user"></i>
             <span class="link_name">Profil</span>
           </a>
@@ -71,25 +77,42 @@
       </ul>
     </div>
     <div class="section">
-      <div class="content">
-        <h1>Dashboard</h1>
-        <i onclick="chonclick(this)" class="bx bx-chevron-right"></i>
-        <div id="boxes">
-          <div class="dash-users">
-            <h2 class="bx bx-user">User :</h2>
-            <h2>200 User</h2>
-          </div>
-          <div class="dash-topics">
-            <h2 class="bx bx-detail">E-Commerce :</h2>
-            <h2>10 Partner</h2>
-          </div>
-          <div class="dash-comments">
-            <h2 class="bx bx-comment">Feedback :</h2>
-            <h2>200 Feedback</h2>
-          </div>
-        </div>
+  <div class="content">
+    <h1>Dashboard</h1>
+    <i onclick="chonclick(this)" class="bx bx-chevron-right"></i>
+    <div id="boxes">
+      <div class="dash-users">
+        <h2 class="bx bx-user">User :</h2>
+        <?php
+          include 'php/connect.php';
+          $result = mysqli_query($conn, "SELECT COUNT(*) as total_users FROM customer");
+          $row = mysqli_fetch_assoc($result);
+          $totalUsers = $row['total_users'];
+          echo "<h2>".$totalUsers." User</h2>";
+        ?>
+      </div>
+      <div class="dash-topics">
+        <h2 class="bx bx-detail">E-Commerce :</h2>
+        <?php
+          $result = mysqli_query($conn, "SELECT COUNT(*) as total_partners FROM e_comerce");
+          $row = mysqli_fetch_assoc($result);
+          $totalPartners = $row['total_partners'];
+          echo "<h2>".$totalPartners." Partner</h2>";
+        ?>
+      </div>
+      <div class="dash-comments">
+        <h2 class="bx bx-comment">Feedback :</h2>
+        <?php
+          $result = mysqli_query($conn, "SELECT COUNT(*) as total_feedback FROM feedback");
+          $row = mysqli_fetch_assoc($result);
+          $totalFeedback = $row['total_feedback'];
+          echo "<h2>".$totalFeedback." Feedback</h2>";
+        ?>
       </div>
     </div>
+  </div>
+</div>
+
 
     <div class="container-fluid bg-dark">
       <div class="row">
