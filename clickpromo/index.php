@@ -242,10 +242,8 @@
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Got To Apk</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -257,10 +255,8 @@
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -275,10 +271,8 @@
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -290,10 +284,8 @@
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -305,10 +297,8 @@
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -323,10 +313,8 @@
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -338,10 +326,8 @@
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -353,10 +339,8 @@
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -380,10 +364,8 @@
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -395,10 +377,8 @@
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -410,10 +390,8 @@
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -425,10 +403,8 @@
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -440,10 +416,8 @@
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -455,10 +429,8 @@
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -470,10 +442,8 @@
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -560,9 +530,10 @@
               <input class="form-control" placeholder="Masukkan" />
               &nbsp; &nbsp;
             </div>
-            <button type="submit" class="btn btn-danger text-light mb-2">
-              Kirim
-            </button>
+            <a class="nav-link" onclick='alert("Harap Login Terlebih dahulu")'>
+              <button type="submit" class="btn btn-danger text-light mb-2"> 
+              Kirim</button>
+            </a>
           </form>
           <br />
           <img class="img-fluid" src="img/bahan lain/mail.svg" />

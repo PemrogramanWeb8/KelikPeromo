@@ -21,7 +21,6 @@ function tambah_promo(){
     return mysqli_affected_rows($conn);
 }
 
-
 function hapus_promo(){
     global $conn;
     $id_promo = $_GET["id_promo"];

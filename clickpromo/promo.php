@@ -36,7 +36,7 @@ session_start();
     <link rel="website icon" type="png" href="img/bahan lain/logo2.png" />
   </head>
   <body>
-    <div class="container-fluid" style="background-color: #000000">
+    <div class="container-fluid" style="background-color: #ffffff">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">CLICKPROMO</a>
@@ -156,15 +156,8 @@ session_start();
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                <pre>Tersedia Size 36-40 
-With Box Original : China Material : PU 
-Leather 
-36 : 23 Cm || 37 : 23,5 Cm 
-38 : 24 Cm || 39 : 24,5 Cm
-40 : 25 Cm 
-Weight : 500grams.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -176,15 +169,8 @@ Weight : 500grams.</pre><br />
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                <pre>Tersedia Size 36-40
-With Box Original : China Material : PU
-Leather 
-36 : 23cm || 37 : 23,5cm
-38 : 24cm || 39 : 24,5cm
-40 : 25cm
-Weight : 600grams.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -199,15 +185,8 @@ Weight : 600grams.</pre><br />
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                <pre>MELZA HIGHWAIST DENIM PANTS 🌻 Mat:  JEANS IMPORT 😚💖
-Size: Allsize 
-fit to L Lp: up to 92 (ditarik/pinggang karet) L. 
-Paha: 60 cm || Pj: 105 cm
-Pasak: 16 cm
-Price: 165K (store) || Shopee: 179K (include tax shopee) 
-Available at store & shopee 🌻</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -219,15 +198,8 @@ Available at store & shopee 🌻</pre><br />
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                <pre>NAOMI PARACHUTE PANTS  🎀  SUPER CUTE & COMFY PANTS! 😍 
-NOTE: WALAUPUN PARASUT PANTS INI TETAP BISA DIGOSOK DENGAN 
-PENGATURAN PANAS MEDIUM (SETENGAH PUTARAN) ✨
-MAT : PARACHUTE IMPORT 
-SIZE : ALL SIZE FIT TO L  
-L pinggang = up tp 80 CM || (jika ditarik | pinggang karet) 
-L paha= 56 CM || Panjang celana= 105 CM.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -239,15 +211,8 @@ L paha= 56 CM || Panjang celana= 105 CM.</pre><br />
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                <pre> Artikel : Moda White Tunic 
-Ukuran : All Size - fit to XL  
-Lingkar Dada : 110cm 
-Panjang Baju : 115cm 
-Busui & Wudhu Friendly 
-ZEA | Dazzling Your Confidence ✨ 
-since 2018.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -262,15 +227,8 @@ since 2018.</pre><br />
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                <pre>CROP TOP CABLE STRIP
-UKURAN BAJU
-Panjang badan : 50cm 
-Lebar dada : 57cm 
-Lingkar dada : 114cm 
-Panjang tangan : 50cm 
-Armhole : 20cm.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -282,15 +240,8 @@ Armhole : 20cm.</pre><br />
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                <pre>Ukuran: All Size/Free Size
-Bahan: Waffle
-Berat Produk: 0.296 Kg. Panjang: 100 Cm
-Lingkar Pinggang: 108 Cm || Lingkar Pinggul: 110 Cm
-Lingkar Dada: 108 Cm || Lingkar Leher: 54 Cm
-Perkiraan Berat Badan: 40 - 70 Kg. Perkiraan Tinggi Badan: 140 - 170 Cm
-Note: Cocok untuk ukuran tubuh wanita asia</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -302,15 +253,8 @@ Note: Cocok untuk ukuran tubuh wanita asia</pre><br />
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                <pre>Bahan: Corduroy kancing: beso
-Warna merah ini akan lebih gelap dari sebelumnya. Merah & Apricot 
-Panjang Baju: 65 cm || Lingkar Dada: 106cm || Panjang lengan: 45cm  
-7402 * details : bagian lengan hanya memiliki kancing 1 Tak seperti di gambar
-Ukuran: M	
-Panjang Baju: 74cm || Lingkar Dada: 108cm
-Panjang lengan: 50cm</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -334,15 +278,8 @@ Panjang lengan: 50cm</pre><br />
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                <pre>Quick Details
-Place of Origin: Guangdong, China, China
-Brand Name:Xiaomi, Xiaomi
-Capacity:4L
-Type:sport, internal frame
-Pattern Type:blank
-Lining Material:Polyester</pre>><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -354,15 +291,8 @@ Lining Material:Polyester</pre>><br />
             <div class="card-body">
               <div class="card-title"><br>Product2</div>
               <div class="card-text">
-                <pre>Warna : Hitam , Navy , Abu-abu , Hijau
-Ukuran Tas : P.34 T.14 L.7 cm
-Panjang Tali -+ 85 cm
-Lebar Tali -+ 7cm
-Memiliki dua Ruang
-Ruang Utama Sudah dilapisi Busa 
-Dan kain satin</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -377,15 +307,8 @@ Dan kain satin</pre><br />
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                <pre>Kondisi: Baru
-Berat Satuan: 300 g
-Kategori: Earphone
-Etalase: SPECIAL BUNDLING
-Produk dalam Paket ini :
-- Headset HA6 di lengkapi dengan earpads yang tentunya nyaman di gunakan untuk mendengarkan musik dengan bass yang sangat bagus ataupun untuk telepon
-- Pouch JETE memudahkan anda untuk menyimpan headset dan kabel supaya lebih rapih.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -397,15 +320,8 @@ Produk dalam Paket ini :
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                <pre>Kategori: Wash and Wax
-Etalase: Semua Etalase
-Washmitt Microfiber Wool Super Soft Glove
-Sarung Tangan Cuci Mobil Lembut dan Tebal
-Material : Premium Wool Microfiber
-Ukuran 15 x 24cm
-100% Baru (NEW).</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -417,15 +333,8 @@ Ukuran 15 x 24cm
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                <pre>Kondisi: Baru
-Berat Satuan: 450 g
-Kategori: Gamis Wanita
-Etalase: Edisi Derawan
-Vie Gamis by Zaskia Mecca
-An Exclusive Jelita Indonesia Collection From ZM Zaskia Mecca
-Limited Item.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -440,12 +349,8 @@ Limited Item.</pre><br />
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                <pre>Kondisi: Baru
-Berat Satuan: 290 - 425 g
-Kategori: Legging Wudhu
-Etalase: FASHION HIJAB DEWASA.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -457,12 +362,8 @@ Etalase: FASHION HIJAB DEWASA.</pre><br />
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                <pre>Kondisi: Baru
-Berat Satuan: 800 g
-Kategori: Jas Hujan
-Etalase: Mahada.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -474,12 +375,8 @@ Etalase: Mahada.</pre><br />
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                <pre>Kondisi: Baru
-Berat Satuan: 200 g
-Kategori: Daster Wanita
-Etalase: Semua Etalase.</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -503,15 +400,8 @@ Etalase: Semua Etalase.</pre><br />
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                <pre>Convers  Sneakers desain hi-top bernuansa monokrom untuk timeless look
-Warna hitam
-Upper tekstil || Rubber outsole
-Insole tekstil
-Tali depan
-Round toe
-Produk unisex</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -523,15 +413,8 @@ Produk unisex</pre><br />
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                <pre>Vans
-Low-ankle 
-sneakers monokrom
-Warna hitam
-Material kanvas
-Insole tekstil
-Sol luar rubber </pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -546,13 +429,8 @@ Sol luar rubber </pre><br />
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                <pre>Topi anak Ripcurl
-Features:
-Cotton Canvas
-Mid brim
-Woven flag label</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -564,15 +442,8 @@ Woven flag label</pre><br />
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                <pre>New Era
-Los Angeles Lakers Jrnba21 Tip Off Kni Otc
-Beanie anak detail 
-Logo embroidery untuk urban streetwear look
-Warna ungu
-Material acrylic
-Detail tassel</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -584,15 +455,8 @@ Detail tassel</pre><br />
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                <pre>Nike
-Run Woven Jacket
-Didesain khusus untuk olahraga running
-Jaket desain timeless classic 
-Dengan teknologi Dri-FIT
-Warna hitam
-Material poliester tidak transparan</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -607,15 +471,8 @@ Material poliester tidak transparan</pre><br />
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                <pre>VANS
-Checkerboard Day 21 Bf Hoodie
-Hoodie detail statementable graphic 
-print untuk casual urban look
-Warna marshmallow (beige)
-Detail hoodie dengan tali serut
-Regular fit </pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -627,12 +484,8 @@ Regular fit </pre><br />
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                <pre>TEE GAMELAN HITAM COWO
-Kaos Gamelan
-Terbuat dari bahan cotton 
-membuat nyman dikenakan sehari hari</pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -644,15 +497,8 @@ membuat nyman dikenakan sehari hari</pre><br />
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                <pre>Locko Long Pants Formal Pria 
-Celana Panjang Kerja Slim Fit Material Cotton ORIGINAL 
-Item Type : Pant
-Gender : Man
-Material : Wol
-Occassion : Casual
-Reguler Fi </pre><br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -742,10 +588,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -757,10 +601,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -775,10 +617,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -790,10 +630,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -805,10 +643,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -823,10 +659,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -838,10 +672,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -853,10 +685,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -880,10 +710,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -895,10 +723,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -910,10 +736,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -925,10 +749,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -940,10 +762,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -955,10 +775,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
@@ -970,10 +788,8 @@ Reguler Fi </pre><br />
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-                hic nobis molestias rem eius assumenda.<br />
-                <a class="btn btn-info">Promo</a> &nbsp; &nbsp;
-                <a class="btn btn-success">Add To Cart</a>
+              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
               </div>
             </div>
           </div>
