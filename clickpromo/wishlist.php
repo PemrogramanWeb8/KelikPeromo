@@ -1,3 +1,12 @@
+<?php
+session_start();
+include 'php/connect.php';
+
+$id_cust = '';
+$_SESSION['id_cust'] = $id_cust;
+echo $id_cust;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -111,16 +120,47 @@
         </nav>
       </div>
     </div>
-
     <!-- kolom 1 -->
-    <div class="tabel1 mt-5"></div>
-    <table id="t01">
-      <tr>
-        <th>Nama</th>
-        <th>Toko</th>
-        <th>Aksi</th>
-      </tr>
-    </table>
+    <div class="tabel1 mt-5">
+      <table id="t01">
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal Batas Promo</th>
+          <th>Aksi</th>
+        </tr>
+        <?php
+        $id_cust = $_SESSION['id_cust'];
+
+        $wishlist_query = "SELECT * FROM wishlist WHERE id_cust = ?";
+        $stmt = mysqli_prepare($conn, $wishlist_query);
+        mysqli_stmt_bind_param($stmt, "i", $id_cust);
+        mysqli_stmt_execute($stmt);
+        $wishlist_result = mysqli_stmt_get_result($stmt);
+
+        if (mysqli_num_rows($wishlist_result) > 0) {
+          while ($wishlist_row = mysqli_fetch_assoc($wishlist_result)) {
+            $nama_promo = $wishlist_row['Nama_promo'];
+            $tgl_batas_promo = $wishlist_row['tgl_batas'];
+            $id_wishlist = $wishlist_row['id_wishlist'];
+            ?>
+            <tr>
+              <td><?php echo $nama_promo; ?></td>
+              <td><?php echo $tgl_batas_promo; ?></td>
+              <td>
+                <form action="hapus_wishlist.php" method="post">
+                  <input type="hidden" name="id_wishlist" value="<?php echo $id_wishlist; ?>">
+                  <button type="submit">Hapus</button>
+                </form>
+              </td>
+            </tr>
+            <?php
+          }
+        } else {
+          echo "<tr><td colspan='3'>Tidak ada data wishlist.</td></tr>";
+        }
+        ?>
+      </table>
+    </div>
 
     <footer class="container-fluid mt-5">
       <div class="container pt-5 pb-5">

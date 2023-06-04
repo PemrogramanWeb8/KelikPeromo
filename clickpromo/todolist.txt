@@ -1,0 +1,20 @@
+Admin
+administrator fix
+delcom fix
+delpromo fix
+edcom fix
+edpromo fix
+edadmin fix
+
+Customer
+dashboard fix
+e-commerce fix
+promo fix
+wishlist
+profil fix
+feedback 
+
+Index
+login fix
+logout fix
+register fix

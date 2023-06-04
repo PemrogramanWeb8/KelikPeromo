@@ -4,6 +4,10 @@ error_reporting(0);
 
 session_start();
 
+include 'php/connect.php';
+include 'php/fungsi.php';
+include 'php/wishlist_process.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -110,7 +114,7 @@ session_start();
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a  href="whislist.html" class="btn btn-lg btn-danger text-light ml-5"
+                <a  href="wishlist.php" class="btn btn-lg btn-danger text-light ml-5"
                   ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a
                 >
               </li>
@@ -138,382 +142,89 @@ session_start();
       ></div>
     </div>
 
-    <!--slid E-commerce -->
+    <!-- promo e-commerce -->
+    <div class="container mt-5">
+  <?php
+  $query = "SELECT * FROM e_comerce";
+  $result = mysqli_query($conn, $query);
 
-    <div class="container">
-      <div class="row mt-5 mb-5">
-        <div class="col-md-12">
-          <h1 class="text-center">Shopee</h1>
-        </div>
+  while ($row = mysqli_fetch_assoc($result)) {
+    $ecommerce_id = $row['id_ecom'];
+    $nama_ecom = $row['Nama_Ecom'];
+
+    ?>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center"><?php echo $nama_ecom; ?></h2>
       </div>
     </div>
 
-    <div class="container">
-      <div class="owl-carousel">
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop1.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product1</div>
-              <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row">
+      <?php
+      $promo_query = "SELECT * FROM promo WHERE id_ecom = $ecommerce_id";
+      $promo_result = mysqli_query($conn, $promo_query);
 
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop2.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product2</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+      if (mysqli_num_rows($promo_result) > 0) {
+        while ($promo_row = mysqli_fetch_assoc($promo_result)) {
+          $gambar_promo = $promo_row['gambar_promo'];
+          $nama_promo = $promo_row['nama_promo'];
+          $link_promo = $promo_row['link_promo'];
+          ?>
+          <div class="col-md-6">
+            <div class="outer-div mb-4">
+              <div class="inner-div">
+                <img src="img/promo/<?php echo $gambar_promo; ?>" alt="<?php echo $nama_promo; ?>" class="center-img promo-img">
               </div>
             </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/shopee/shop3.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product3</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
+            <div class="promo-details">
+              <h4><?php echo $nama_promo; ?></h4>
+              <a href="<?php echo $link_promo; ?>" class="btn btn-primary">App >></a>
+              <button class="btn btn-secondary wishlist-btn" data-promo-id="<?php echo $promo_row['id_promo']; ?>">Wishlist >></button>
             </div>
           </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop4.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product4</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop5.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product5</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/shopee/shop6.1.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product6</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop7.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product7</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/shopee/shop8.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product8</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <?php
+        }
+      } else {
+        echo "<div class='col-md-12'><p class='text-center'>Tidak ada promo saat ini untuk $nama_ecom</p></div>";
+      }
+      ?>
     </div>
+    <?php
+  }
+  ?>
+</div>
 
-    <div class="container">
-      <div class="row mt-2 mb-5">
-        <div class="col-md-12">
-          <h1 class="text-center">Tokopedia</h1>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="owl-carousel">
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped1.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product1</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped2.jpg" />
-            <div class="card-body">
-              <div class="card-title"><br>Product2</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+<style>
+  .promo-img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .promo-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
 
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/tokopedia/tokped3.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product3</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+.promo-details {
+  text-align: center;
+}
 
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped4.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product4</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+.promo-details h4 {
+  margin-top: 10px;
+}
 
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped5.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product5</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+.promo-details .btn {
+  margin-top: 10px;
+}
 
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/tokopedia/tokped6.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product6</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
+.outer-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
 
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped7.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product7</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/tokopedia/tokped8.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product8</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row mt-2 mb-5">
-        <div class="col-md-12">
-          <h1 class="text-center">Zalora</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="owl-carousel">
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal1.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product1</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal2.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product2</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/zalora/zal3.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product3</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal4.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product4</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal5.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product5</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img
-              class="card-img-top img-fluid"
-              src="img/zalora/zal6.jpg"
-            />
-            <div class="card-body">
-              <div class="card-title">Product6</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal7.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product7</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card product-card">
-            <img class="card-img-top img-fluid" src="img/zalora/zal8.jpg" />
-            <div class="card-body">
-              <div class="card-title">Product8</div>
-              <div class="card-text">
-              <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-1 pb-5">
-      <div class="col-md-12 text-center">
-        <a class="btn btn-danger text-light btn-lg">Lainnya</a>
-      </div>
-    </div>
-  </div>
-
-    <!--slid Kategori -->
 
     <div class="container">
       <div class="row mt-2 mb-5">
@@ -917,5 +628,27 @@ session_start();
         },
       });
     </script>
+<script>
+  var wishlistButtons = document.querySelectorAll('.wishlist-btn');
+
+  wishlistButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      var promoId = this.getAttribute('data-promo-id');
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'php/wishlist_process.php', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          alert('Promo berhasil ditambahkan ke wishlist!');
+        } else if (xhr.readyState === 4 && xhr.status !== 200) {
+          alert('Terjadi kesalahan. Promo gagal ditambahkan ke wishlist.');
+        }
+      };
+      xhr.send('promo_id=' + promoId);
+    });
+  });
+</script>
+
   </body>
 </html>

@@ -20,21 +20,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $userResult = mysqli_query($conn, $userQuery);
 
     if (mysqli_num_rows($adminResult) > 0) {
+        $adminData = mysqli_fetch_assoc($adminResult);
         $_SESSION["akun-user"] = [
             "username" => $username,
             "password" => $password,
-            "role" => "admin"
+            "role" => "admin",
+            "id_admin" => $adminData["id_admin"]
         ];
         header("Location: administrator.php");
-        exit;
+        exit;    
     } elseif (mysqli_num_rows($userResult) > 0) {
+        $userData = mysqli_fetch_assoc($userResult);
         $_SESSION["akun-user"] = [
+            "id_cust" => $userData["id_cust"],
             "username" => $username,
             "password" => $password,
             "role" => "user"
         ];
         header("Location: dashboard.php");
-        exit;
+        exit;    
     } else {
         $loginError = true;
     }

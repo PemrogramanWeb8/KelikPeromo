@@ -1,101 +1,99 @@
+<?php
+session_start();
+
+include 'php/connect.php';
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $_POST["email"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $admin_id = $_SESSION["akun-user"]["id_admin"];
+
+    // Update data admin di database sesuai dengan nilai yang diinputkan
+    $updateQuery = "UPDATE administrator SET Username = '$username', Email = '$email', Password = '$password' WHERE id_admin = $admin_id";
+    $result = mysqli_query($conn, $updateQuery);
+
+    if ($result) {
+        echo '<script>alert("Data admin berhasil diperbarui.");</script>';
+        echo '<script>window.location.href = "administrator.php";</script>';
+    } else {
+        echo '<script>alert("Terjadi kesalahan saat memperbarui data admin.");</script>';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Profil Admin</title>
     <link rel="website icon" type="png" href="img/profil/alang1.jpg" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/profil.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-  </head>
-  <body class="bg-secondary">
+    <style>
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="bg-secondary">
     <div class="container mt-5 mb-5">
-      <!--kolom 1-->
-      <div class="card text-center shadow mb-5">
-        <div class="card-body px-4 py-4">
-          <img
-            src="img/profil/alang1.jpg"
-            class="profile rounded-circle w-50 border border-5"
-          />
-          <h1 class="mb-0">Alang Artha Iwana</h1>
-          <span class="fw-light d-block mb-3">Web Developer</span>
-          <p class="card-text">
-            "Jadilah seseorang yang tak terbatas oleh batasan satu bidang, melainkan melebur dengan keajaiban di setiap aspek teknologi"
-          </p>
-        </div>
-        <div class="card-footer bg-white fs-3">
-          <a href="https://facebook.com" class="text-secondary">
-            <i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://instagram.com" class="text-secondary">
-            <i class="fa-brands fa-square-instagram"></i
-          ></a>
-        </div>
-      </div>
-      <!--kolom 2-->
-      <div class="form-group mx-sm-12 mb-2">
-        <label for="inputPassword2" class="sr-only">Admin</label>
-        <input class="form-control" placeholder="Nama" />
-        &nbsp; &nbsp;
-        <input class="form-control" placeholder="Email" />
-        &nbsp; &nbsp;
-        <input class="form-control" placeholder="Username" />
-        &nbsp; &nbsp;
-        <input class="form-control" placeholder="Password" />
-        &nbsp; &nbsp;
-      </div>
-
-      <!-- kolom 3 -->
-      <div class="card shadow mt-5">
-        <div class="card-header bg-light fw-bold">E-Commerce Admin</div>
-        <div class="card-body">
-          <div class="row row-cols-5 fs-1 text-secondary text-center">
-            <div class="col">
-              <img src="img/profil/shopee.png"></img>
+        <!--kolom 1-->
+        <div class="card text-center shadow mb-5">
+            <div class="card-body px-4 py-4">
+                <h1 class="mb-4">GANTI PROFIL</h1>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                    </div>
+                    <button type="submit" class="btn btn-danger text-light mt-3 mb-2">Simpan</button>
+                    <a href="administrator.php" class="btn btn-danger text-light mt-3 mb-2">&lt;&lt; Kembali</a>
+                </form>
             </div>
-            <div class="col">
-                <img src="img/profil/tokopedia.png"></img>
-              </div>
-            <div class="col">
-                <img src="img/profil/zara.png"></img>
-              </div> 
-          </div>
         </div>
-      </div>
-
-      <button type="submit" class="btn btn-danger text-light mt-3 mb-2">
-        Simpan
-      </button>
-      <a
-        button
-        type="submit"
-        class="btn btn-danger text-light mt-3 mb-2"
-        href="administrator.php"
-      >
-        Kembali
-      </a>
-
     </div>
-    <div class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col-md-12 text-capitalize text-center text-light">
-          Copyright <span>Click Promo</span> 2023 - CLICKPROMO.COM
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-capitalize text-center">
+                    &copy; 2023 - Click Promo
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
 </html>

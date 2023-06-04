@@ -4,6 +4,7 @@ error_reporting(0);
 
 session_start();
 
+include 'php/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -146,55 +147,46 @@ session_start();
       </div>
     </div>
 
-    <!--slider end-->
-
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-6">
-          <div class="outer-div">
-            <div class="inner-div1">
-              <a href="https://shopee.co.id/"
-                ><img src="img/bahan lain/shopee.webp" alt="" srcset=""
-              /></a>
-            </div>
-          </div>
-        </div>
+      <?php
+      $query = "SELECT * FROM e_comerce";
+      $result = mysqli_query($conn, $query);
 
+      while ($row = mysqli_fetch_assoc($result)) {
+        $gambar_ecom = $row['gambar_ecom'];
+        $link_ecom = $row['link_ecom'];
+        ?>
         <div class="col-md-6">
           <div class="outer-div">
-            <div class="inner-div2">
-              <a href="https://www.tokopedia.com/"
-                ><img src="img/bahan lain/tokopedia.jpg" alt="" srcset=""
-              /></a>
+            <div class="inner-div">
+              <a href="<?php echo $link_ecom; ?>">
+                <img src="img/e_com/<?php echo $gambar_ecom; ?>" alt="" srcset="" class="center-img">
+              </a>
             </div>
           </div>
         </div>
+      <?php
+      }
+      ?>
       </div>
     </div>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="outer-div">
-            <div class="inner-div3">
-              <a href="https://www.zalora.co.id/"
-                ><img src="img/bahan lain/zalora.jpg" alt="" srcset=""
-              /></a>
-            </div>
-          </div>
-        </div>
+    <style>
+  .inner-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 
-        <div class="col-md-6">
-          <div class="outer-div">
-            <div class="inner-div4">
-              <a href="https://www.uniqlo.com/id/id/"
-                ><img src="img/bahan lain/uniqlo.svg" alt="" srcset=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  </style>
 
     <footer class="container-fluid mt-5">
       <div class="container pt-5 pb-5">
