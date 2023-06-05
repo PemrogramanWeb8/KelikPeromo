@@ -10,9 +10,9 @@ Customer
 dashboard fix
 e-commerce fix
 promo fix
-wishlist
+wishlist suren
 profil fix
-feedback 
+feedback suren
 
 Index
 login fix

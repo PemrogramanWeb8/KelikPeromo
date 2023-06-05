@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $result = mysqli_query($conn, $updateQuery);
 
     if ($result) {
-        echo '<script>alert("Data customer berhasil diperbarui.");</script>';
+        echo '<script>alert("Data customer berhasil diperbarui. Harap LogOut Terlebih Dahulu");</script>';
     } else {
         echo '<script>alert("Terjadi kesalahan saat memperbarui data customer.");</script>';
     }
@@ -40,7 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!--kolom 1-->
     <div class="card text-center shadow mb-5">
         <div class="card-body px-4 py-4">
-            <h1 class="mb-0">User</h1>
+            <h1 class="mb-0"> <?php
+            if (isset($_SESSION["akun-user"])) {
+                $nama = $_SESSION["akun-user"]["username"];
+                echo $nama;
+            }
+          ?></h1>
         </div>
     </div>
     <!--kolom 2-->

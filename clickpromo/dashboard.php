@@ -259,8 +259,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -272,8 +272,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -288,8 +288,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -301,8 +301,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -314,8 +314,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -330,8 +330,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -343,8 +343,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -356,8 +356,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product8</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -381,8 +381,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product1</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -394,8 +394,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product2</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -407,8 +407,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product3</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -420,8 +420,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product4</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -433,8 +433,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product5</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -446,8 +446,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product6</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+              <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
@@ -459,8 +459,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="card-body">
               <div class="card-title">Product7</div>
               <div class="card-text">
-                <a class="btn btn-info" onclick='alert("Harap Login Terlebih dahulu")'>App >></a> &nbsp; &nbsp;
-                <a class="btn btn-success" onclick='alert("Harap Login Terlebih dahulu")'>Whislist >></a>
+                <a class="btn btn-info" >App >></a> &nbsp; &nbsp;
+                <a class="btn btn-success" >Wishlist >></a>
               </div>
             </div>
           </div>
